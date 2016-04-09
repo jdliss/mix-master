@@ -1,4 +1,6 @@
 <h1><%= @artist.name %></h1>
-<%= image_tag @artist.image_path %>
+<!-- <%= image_tag @artist.image_path %> -->
+<iframe class="imgur-embed" width="300" height="300" frameborder="0" src="<%= @artist.image_path %>"></iframe>
+
 <p><%= link_to "Edit", edit_artist_path(@artist) %></p>
 <p><%= link_to "Delete", artist_path(@artist), method: "delete" %></p>
