@@ -1,7 +1,6 @@
 <h1>All Artists</h1>
 <% Artist.all.each do |artist| %>
 <h3><%= link_to artist.name, artist %></h3>
-<!-- <img src="<%= artist.image_path %>" height="300" width="300"><br /> -->
-<iframe class="imgur-embed" width="300" height="300" frameborder="0" src="<%= artist.image_path %>"></iframe>
+<img src="<%= artist.image_path %>" height="300" width="300"><br />
 <% end %>
 <%= link_to "New artist", new_artist_path %>
